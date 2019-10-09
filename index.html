@@ -19,6 +19,7 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <style>
       * {
         padding: 0;
@@ -129,7 +130,14 @@
         section.jumbo > p.para2 > a {
         color: #00aeff;
         }
-
+        .footer-container{
+          background: #FAFAFA;
+          margin-top: 10rem;
+        }
+        .footer-items{
+          display: flex;
+          justify-items: space-around;
+        }
         @media (min-width: 320px) and (max-width: 480px) {
         img {
           height: 45px;
@@ -230,6 +238,36 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-    <div class="footer"></div>
+    <div class="footer-container">
+      <footer class="footer">
+        <img src="https://res.cloudinary.com/dekillerj/image/upload/v1570648980/brand-logo.png" alt="HNG logo">
+        <div class="footer-items">
+            <div>
+              <h2>Quick Links</h2>
+              <ul>
+              <li><a href="#">Join HNG</a></li>
+              <li><a href="#">About HNG</a></li>
+              <li><a href="#">Become a Sponsor</a></li>
+              <li><a href="#">Signup as a mentor</a></li>
+              </ul>
+            </div>
+            <div>
+                <h2>Contact Us</h2>
+                <p>Phone: +234(0) 812 345 6789</p>
+                <p>Email: Interns@hng.tech</p>
+            </div>
+            <div>
+                <h2>Office Address</h2>
+                <p>3 Birrel Avenue, Sabo, Yaba Lagos State</p>
+            </div>
+            <div>
+                <h2>Follow us</h2>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-dribbble"></i>
+            </div>
+      </div>
+      </footer>
+    </div>
   </body>
 </html>
