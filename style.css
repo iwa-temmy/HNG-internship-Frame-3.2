@@ -56,14 +56,17 @@ a:hover {
   display: none;
 }
 .form-container {
-  width: 800px;
-  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
 .form-container input,
 textarea {
-  width: 90%;
+  width: 80%;
   padding: 10px 20px;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 
 form.form-container > button {
@@ -145,17 +148,5 @@ section.jumbo > p.para2 {
   }
   #check:checked ~ ul {
     left: 0;
-  }
-}
-@media screen and (max-width: 760px) {
-  .form-container {
-    width: 90%;
-    margin: 30px auto;
-  }
-  .form-container input,
-  textarea {
-    width: 90%;
-    padding: 10px 20px;
-    margin: 5px 0px;
   }
 }
