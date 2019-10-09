@@ -12,14 +12,14 @@
     />
     <style>
       .form-container {
-        width: 1000px;
+        width: 800px;
         margin: 30px auto;
       }
       .form-container input,
       textarea {
-        width: 100%;
+        width: 90%;
         padding: 10px 20px;
-        margin: 5px 0px;
+        margin: 5px auto;
       }
 
       form.form-container > button {
@@ -29,6 +29,18 @@
         background: #00aeff;
         border: 0px;
         color: #fff;
+      }
+      @media screen and (max-width: 760px) {
+        .form-container {
+          width: 90%;
+          margin: 30px auto;
+        }
+        .form-container input,
+        textarea {
+          width: 90%;
+          padding: 10px 20px;
+          margin: 5px 0px;
+        }
       }
     </style>
   </head>
