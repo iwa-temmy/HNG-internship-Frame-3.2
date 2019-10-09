@@ -96,6 +96,7 @@ section.jumbo > h2.heading {
 section.jumbo > p.para {
   text-align: center;
   margin-bottom: 0px;
+  padding: 0 5px;
 }
 
 section.jumbo > p.para2 {
@@ -103,6 +104,10 @@ section.jumbo > p.para2 {
   margin-top: 0px;
   margin-bottom: 50px;
 }
+section.jumbo > p.para2 > a {
+  color: #00aeff;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   img {
     height: 45px;
