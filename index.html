@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <title>Frame 3.2 (Join intern)</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;
+    }
+    nav{
+        background: #D1F0F6;
+        height: 80px;
+        width: 100%;
+    }
+
+    img{
+        height: 57px;
+        width: 180px;
+        line-height: 80px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    nav ul li a{
+        color: #474747;
+        font-size: 16px;
+        padding: 15px 20px;
+        border-radius: 3px;
+        opacity: 0.95;
+    }
+    a.active,a:hover{
+        background: #00AEFF;
+        transition: .5s;
+        color: white;
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+    img{
+    height: 45px;
+    width: 130px;
+    line-height: 80px;
+    margin-left: 20px;
+    margin-top: 15px;
+    }
+  
+    }
+
+    @media (max-width: 952px){   
+    nav ul li a{
+    font-size: 16px;
+    }
+    }
+
+    @media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #D1F0F6;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color:  #00AEFF;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    }
+</style>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="brand-logo.png" alt=""></label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">HNG6</a></li>
+            <li><a href="#">Mentors</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="active" href="#">Join HNG</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
