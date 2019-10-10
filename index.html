@@ -9,10 +9,7 @@
       rel="shortcut icon"
       href="https://res.cloudinary.com/dekillerj/image/upload/v1570648980/brand-logo.png"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
@@ -29,7 +26,7 @@
         box-sizing: border-box;
         }
         body {
-        font-family: Ubuntu, "sans-serif";
+        font-family: 'Open Sans', sans-serif;
         }
         nav {
         background: #d1f0f6;
@@ -39,7 +36,7 @@
 
         img {
         height: 57px;
-        width: 180px;
+        width: 200px;
         line-height: 80px;
         margin-left: 100px;
         margin-top: 10px;
@@ -133,10 +130,53 @@
         .footer-container{
           background: #FAFAFA;
           margin-top: 10rem;
+          font-size: 0.93rem;
         }
         .footer-items{
           display: flex;
-          justify-items: space-around;
+          justify-content: space-between;
+          vertical-align: middle;
+          margin:  3rem 6rem;
+        }
+        .footer-logo{
+          width: 12.5rem;
+        }
+        .footer-header{
+          padding: 1rem 0;
+          color: #00AEFF;
+        }
+        .footer-item{
+          padding: 0.3rem 0;
+        }
+        .footer-links a{
+          color: #00AEFF;
+        }
+        .footer-items a:hover{
+          color:#ccc;
+        }
+        .contact-us__item{
+          padding: 0.3rem 0;
+          color:#737373;
+        }
+        .office-address{
+          color: #737373;
+        }
+        .footer-p{
+          text-align:center;
+          padding: 3rem;
+          color:  #8898AA;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+        }
+        .social-icon{
+          margin-right: 1rem;
+          color:#00aeff;
+          background: white;
+          padding: 0.5rem;
+          border: 5px solid white;
+          box-shadow:0px 4px 4px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08) ;
+          border-radius: 50%;
         }
         @media (min-width: 320px) and (max-width: 480px) {
         img {
@@ -240,33 +280,34 @@
     </div>
     <div class="footer-container">
       <footer class="footer">
-        <img src="https://res.cloudinary.com/dekillerj/image/upload/v1570648980/brand-logo.png" alt="HNG logo">
+        <img class="footer-logo" src="https://res.cloudinary.com/dekillerj/image/upload/v1570648980/brand-logo.png" alt="HNG logo">
         <div class="footer-items">
-            <div>
-              <h2>Quick Links</h2>
-              <ul>
-              <li><a href="#">Join HNG</a></li>
-              <li><a href="#">About HNG</a></li>
-              <li><a href="#">Become a Sponsor</a></li>
-              <li><a href="#">Signup as a mentor</a></li>
+            <div class="quickLinks">
+              <h2 class="footer-header">Quick Links</h2>
+              <ul class="footer-links">
+              <a href="#"><li class="footer-item">Join HNG</li></a>
+              <a href="#"><li class="footer-item">About HNG</li></a>
+              <a href="#"><li class="footer-item">Become a Sponsor</li></a>
+              <a href="#"><li class="footer-item">Signup as a mentor</li></a>
               </ul>
             </div>
-            <div>
-                <h2>Contact Us</h2>
-                <p>Phone: +234(0) 812 345 6789</p>
-                <p>Email: Interns@hng.tech</p>
+            <div class="contact-us">
+                <h2 class="footer-header">Contact Us</h2>
+                <p class="contact-us__item">Phone: <br> +234(0) 812 345 6789</p>
+                <p class="contact-us__item">Email: <br> Interns@hng.tech</p>
             </div>
             <div>
-                <h2>Office Address</h2>
-                <p>3 Birrel Avenue, Sabo, Yaba Lagos State</p>
+                <h2 class="footer-header">Office Address</h2>
+                <p class="office-address">3 Birrel Avenue,<br> Sabo, Yaba<br> Lagos State</p>
             </div>
             <div>
-                <h2>Follow us</h2>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-dribbble"></i>
+                <h2 class="footer-header">Follow us</h2>
+                <i class="fab fa-twitter social-icon"></i>
+                <i class="fab fa-facebook-square social-icon"></i>
+                <i class="fab fa-dribbble social-icon"></i>
             </div>
       </div>
+      <p class="footer-p">&copy; 2019, HNG Internship. All rights reserved</p>
       </footer>
     </div>
   </body>
